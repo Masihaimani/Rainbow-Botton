@@ -1,0 +1,93 @@
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid rgb(37, 37, 37);
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    animation: border 3s infinite;
+    cursor: pointer;
+}
+span{
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-family: 'Baloo Chettan', cursive;
+    animation: text 3s infinite; 
+}
+@keyframes border{
+    0%{
+        border-color: rgb(144, 67, 216);
+        transition: 500ms;
+    }
+    25%{
+        border-color: rgb(111, 197, 197);
+        transition: 500ms;
+    }
+    50%{
+        border-color: rgb(228, 1, 46);
+        transition: 500ms;
+    }
+    75%{
+        border-color: rgb(30, 190, 91);
+        transition: 500ms;
+    }
+    100%{
+        border-color: rgb(144, 67, 216);
+        transition: 500ms;
+    }
+}
+@keyframes border {
+    0%{
+        border-color: rgb(144, 67, 216);
+        border-radius: 4px 80px 80px 80px;
+        transition: 300ms;
+    }
+    25%{
+        border-color: rgb(111, 197, 197);
+        border-radius: 80px 80px 80px 4px ;
+        transition: 300ms;
+    }
+    50%{
+        border-color: rgb(228, 1, 46);
+        border-radius: 80px 80px 4px 80px ;
+        transition: 300ms;
+    }
+    75%{
+        border-color: rgb(30, 190, 91);
+        border-radius: 80px 4px 80px 80px ;
+        transition: 300ms;
+    }
+    100%{
+        border-color: rgb(144, 67, 216);
+        border-radius: 4px 80px 80px 80px ;
+        transition: 300ms;
+    }  
+}
+@keyframes text{
+    0%{
+        color: rgb(144, 67, 216);
+        transition: 500ms;
+    }
+    25%{
+        color: rgb(111, 197, 197);
+        transition: 500ms;
+    }
+    50%{
+        color: rgb(228, 1, 46);
+        transition: 500ms;
+    }
+    75%{
+        color: rgb(30, 190, 91);
+        transition: 500ms;
+    }
+    100%{
+        color: rgb(144, 67, 216);
+        transition: 500ms;
+    }
+}
